@@ -1,0 +1,4 @@
+ hadoop jar /usr/lib/hadoop-current/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -D stream.non.zero.exit.is.failure=false \
+-file /home/lifeng/pc2017fall/cufe_fengyangyang/map.py -mapper "map.py" \
+-file /home/lifeng/pc2017fall/cufe_fengyangyang/red.py -reducer "red.py"  \
+-input cufe_fengyangyang/data/wine   -output cufe_fengyangyang/wineOutput
